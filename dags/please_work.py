@@ -36,7 +36,7 @@ COMMAND='echo setting variable hello;export AIRFLOW_VAR_FOO_BAZ={"hello":"world"
     # print("foo_baz"+foo_json)
 
 
-dag = DAG("please_work", default_args=default_args, schedule_interval=timedelta(1))
+dag = DAG("please_work_change_name", default_args=default_args, schedule_interval=timedelta(1))
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 # t1 = BashOperator(task_id="custom", bash_command=getTaskName, dag=dag)
